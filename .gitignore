@@ -1,0 +1,6 @@
+*.class
+*.iml
+vcs.xml
+modules.xml
+workspace.xml
+misc.xml
