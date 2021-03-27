@@ -31,7 +31,7 @@ public class RunnablePrimeGenerator extends PrimeGenerator implements Runnable {
 		long primeNum = gen.getPrimes().size();
 
 		System.out.println("\nTotal Prime numbers found :" + primeNum );
-		System.out.println("Time taken with single threads: " + time1 + " sec");
+		System.out.println("Time taken with 1 thread : " + time1 + " sec");
 
 		
 		//2 threads
@@ -58,7 +58,7 @@ public class RunnablePrimeGenerator extends PrimeGenerator implements Runnable {
 
 		long primeNumWithTwoThreads = gen1.getPrimes().size() + gen2.getPrimes().size() ;
 		System.out.println("\nTotal Prime numbers found :" + primeNumWithTwoThreads );
-		System.out.println("Time taken with two threads: " + time2 + " sec");
+		System.out.println("Time taken with 2 threads: " + time2 + " sec");
 
 		//4 threads
 
@@ -94,7 +94,7 @@ public class RunnablePrimeGenerator extends PrimeGenerator implements Runnable {
 		long primeNumWithFourThreads = gen3.getPrimes().size() + gen4.getPrimes().size() 
 										+ gen5.getPrimes().size() + gen6.getPrimes().size() ;
 		System.out.println("\nTotal Prime numbers found :" + primeNumWithFourThreads );
-		System.out.println("Time taken with Four threads: " + time4 + " sec");
+		System.out.println("Time taken with 4 threads: " + time4 + " sec");
 
 		//8 threads
 
@@ -147,7 +147,7 @@ public class RunnablePrimeGenerator extends PrimeGenerator implements Runnable {
 										+ gen10.getPrimes().size() + gen11.getPrimes().size() + gen12.getPrimes().size() 
 										+ gen13.getPrimes().size() + gen14.getPrimes().size() ;
 		System.out.println("\nTotal Prime numbers found :" + primeNumWithEightThreads );
-		System.out.println("Time taken with Eight threads: " + time8 + " sec");
+		System.out.println("Time taken with 8 threads: " + time8 + " sec");
 
 	}
 

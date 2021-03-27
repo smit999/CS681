@@ -103,7 +103,7 @@ public class APFS extends FileSystem implements Runnable {
 		repo.appendChild(code);
 		ApfsFile e, f;
 		e = new ApfsFile(code, "e", 200);
-		f = new ApfsFile(code, "f", 350);
+		f = new ApfsFile(code, "f", 390);
 		code.appendChild(e);
 		code.appendChild(f);
 

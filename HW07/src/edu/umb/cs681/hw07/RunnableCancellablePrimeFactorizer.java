@@ -32,7 +32,9 @@ public class RunnableCancellablePrimeFactorizer extends RunnablePrimeFactorizer 
                     if(divisor==2){ divisor++; }
                     else{ divisor += 2; }
                 }
-            } finally { lock.unlock();}
+            } finally { 
+            	lock.unlock();
+            }
         }
     }
 

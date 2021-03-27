@@ -12,8 +12,12 @@ public class RunnableCancellablePrimeGenerator extends RunnablePrimeGenerator {
 
 	public void setDone() {
 		lock.lock();
-		try { done = false; }
-		finally { lock.unlock(); }
+		try { 
+			done = false; 
+		}
+		finally { 
+			lock.unlock(); 
+		}
 	}
 
 	public void generatePrimes() {
