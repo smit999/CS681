@@ -16,9 +16,8 @@ public abstract class FileSystem {
 			setRoot(root);
 			this.id = root.hashCode();
 			return root;
-		} else {
-			return null;
-		}
+		} 
+		else {	return null;	}
 	}
 
 	protected abstract FSElement createDefaultRoot();

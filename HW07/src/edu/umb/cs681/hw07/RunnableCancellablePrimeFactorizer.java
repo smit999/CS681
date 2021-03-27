@@ -27,7 +27,8 @@ public class RunnableCancellablePrimeFactorizer extends RunnablePrimeFactorizer 
                 if(dividend % divisor == 0) {
                     factors.add(divisor);
                     dividend /= divisor;
-                }else {
+                }
+                else {
                     if(divisor==2){ divisor++; }
                     else{ divisor += 2; }
                 }

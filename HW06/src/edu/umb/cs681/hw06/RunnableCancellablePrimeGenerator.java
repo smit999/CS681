@@ -28,9 +28,7 @@ public class RunnableCancellablePrimeGenerator extends RunnablePrimeGenerator {
 				if (isPrime(n)) { 
 					this.primes.add(n); 
 				}
-			} finally {
-				lock.unlock();
-			}
+			} finally {	lock.unlock();	}
 		}
 	}
 
@@ -45,6 +43,6 @@ public class RunnableCancellablePrimeGenerator extends RunnablePrimeGenerator {
 			e.printStackTrace();
 		}
 		gen.getPrimes().forEach((Long prime) -> System.out.print(prime + ", "));
-		System.out.println("\n" + gen.getPrimes().size() + " prime numbers are found.");
+		System.out.println("\nFound " + gen.getPrimes().size() + " prime numbers.");
 	}
 }

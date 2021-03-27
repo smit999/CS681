@@ -91,7 +91,8 @@ public class RunnablePrimeGenerator extends PrimeGenerator implements Runnable {
 		endTime = System.currentTimeMillis();
 		float time4 = (endTime - startTime) / 1000F;
 
-		long primeNumWithFourThreads = gen3.getPrimes().size() + gen4.getPrimes().size() + gen5.getPrimes().size() + gen6.getPrimes().size() ;
+		long primeNumWithFourThreads = gen3.getPrimes().size() + gen4.getPrimes().size() 
+										+ gen5.getPrimes().size() + gen6.getPrimes().size() ;
 		System.out.println("\nTotal Prime numbers found :" + primeNumWithFourThreads );
 		System.out.println("Time taken with Four threads: " + time4 + " sec");
 

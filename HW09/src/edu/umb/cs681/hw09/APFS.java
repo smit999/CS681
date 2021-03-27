@@ -70,8 +70,8 @@ public class APFS extends FileSystem implements Runnable {
 		ApfsDirectory applications = new ApfsDirectory(root, "applications");
 		root.appendChild(applications);
 		ApfsFile a, b;
-		a = new ApfsFile(applications, "a", 50);
-		b = new ApfsFile(applications, "b", 100);
+		a = new ApfsFile(applications, "a", 150);
+		b = new ApfsFile(applications, "b", 200);
 		applications.appendChild(a);
 		applications.appendChild(b);
 
@@ -86,8 +86,8 @@ public class APFS extends FileSystem implements Runnable {
 		ApfsDirectory repo  = new ApfsDirectory(root, "repo");
 		root.appendChild((repo));
 		ApfsFile c, d;
-		c = new ApfsFile(repo, "c", 150);
-		d = new ApfsFile(repo, "d", 200);
+		c = new ApfsFile(repo, "c", 100);
+		d = new ApfsFile(repo, "d", 150);
 		repo.appendChild(c);
 		repo.appendChild(d);
 
@@ -102,8 +102,8 @@ public class APFS extends FileSystem implements Runnable {
 		ApfsDirectory code = new ApfsDirectory(repo, "code");
 		repo.appendChild(code);
 		ApfsFile e, f;
-		e = new ApfsFile(code, "e", 250);
-		f = new ApfsFile(code, "f", 300);
+		e = new ApfsFile(code, "e", 200);
+		f = new ApfsFile(code, "f", 350);
 		code.appendChild(e);
 		code.appendChild(f);
 
